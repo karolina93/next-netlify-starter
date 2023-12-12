@@ -6,13 +6,17 @@ export default function HelloWorld() {
   return <html>
   <body>
   
-  <h1>The script element</h1>
+  <h2>Demo JavaScript in Body</h2>
   
-  <p id="demo"></p>
+  <p id="demo">A Paragraph</p>
+  
+  <button type="button" onclick="myFunction()">Try it</button>
   
   <script>
-  document.getElementById("demo").innerHTML = "Hello JavaScript!";
-  </script> 
+  function myFunction() {
+    document.getElementById("demo").innerHTML = "Paragraph changed.";
+  }
+  </script>
   
   </body>
   </html>
