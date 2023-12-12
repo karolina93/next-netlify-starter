@@ -3,16 +3,21 @@ import Header from '@components/Header'
 import Footer from '@components/Footer'
 
 export default function HelloWorld() {
-  return <body>
-
-  <h1>My First Heading</h1>
-  <p>My first paragraph.</p>
+  return  <!DOCTYPE html>
+  <html>
+  <body>
+  
+  <h1>The script element</h1>
+  
   <p id="demo"></p>
-
+  
   <script>
-document.getElementById("demo").innerHTML = "Hello JavaScript!";
-</script>
+  document.getElementById("demo").innerHTML = "Hello JavaScript!";
+  </script> 
+  
   </body>
+  </html>
+  
 }
 
 // export default function Home() {
