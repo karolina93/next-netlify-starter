@@ -3,30 +3,12 @@ import Header from '@components/Header'
 import Footer from '@components/Footer'
 
 export default function Home() {
-  var script = document.createElement('script');
-    script.type = 'text/javascript';
-
-    script.src = 'https://www.gstatic.com/firebasejs/3.4.0/firebase.js';
-    document.body.appendChild(script);
   return (
-    
-    <div className="container">
-      <Head>
-        <title>Next.js Starter!</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    var fs = require('fs');
 
-      <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-        <p className="description">
-          TEST
-        </p>
-      </main>
+var htmlContent = '<html>Whatever</html>';
 
-      <Footer />
-    </div>
+fs.writeFile('/my-page.html', htmlContent, (error) => { /* handle error */ });
+
   )
 }
