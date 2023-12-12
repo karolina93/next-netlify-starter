@@ -7,7 +7,9 @@ export default function HelloWorld() {
 
   <h1>My First Heading</h1>
   <p>My first paragraph.</p>
-  
+  <script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script>
   </body>
 }
 
