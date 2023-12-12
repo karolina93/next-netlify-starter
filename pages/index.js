@@ -3,7 +3,12 @@ import Header from '@components/Header'
 import Footer from '@components/Footer'
 
 export default function HelloWorld() {
-  return <p>Hello, world!</p>
+  return <body>
+
+  <h1>My First Heading</h1>
+  <p>My first paragraph.</p>
+  
+  </body>
 }
 
 // export default function Home() {
