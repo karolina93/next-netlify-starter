@@ -1,17 +1,31 @@
-<!DOCTYPE html>
-<html>
-<head>
-<script>
-function myFunction() {
-  document.getElementById("demo").innerHTML = "Paragraph changed.";
+import Head from 'next/head'
+import Header from '@components/Header'
+import Footer from '@components/Footer'
+var script = document.createElement('script');
+    script.type = 'text/javascript';
+
+    script.src = 'https://www.gstatic.com/firebasejs/3.4.0/firebase.js';
+    document.body.appendChild(script);
+export default function Home() {
+  return (
+    
+    <div className="container">
+      <Head>
+        <title>Next.js Starter!</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <main>
+        <Header title="Welcome to my app!" />
+        <p className="description">
+          Get started by editing <code>pages/index.js</code>
+        </p>
+        <p className="description">
+          TEST
+        </p>
+      </main>
+
+      <Footer />
+    </div>
+  )
 }
-</script>
-</head>
-<body>
-<h2>Demo JavaScript in Head</h2>
-
-<p id="demo">A Paragraph</p>
-<button type="button" onclick="myFunction()">Try it</button>
-
-</body>
-</html>
