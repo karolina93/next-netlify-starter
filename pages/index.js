@@ -2,10 +2,8 @@ import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 
-class HelloWorld extends React.Component {
-  render() {
-    return <p>Hello, world!</p>;
-  }
+export default function HelloWorld() {
+  return <p>Hello, world!</p>
 }
 
 // export default function Home() {
