@@ -1,12 +1,13 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
-var script = document.createElement('script');
+
+export default function Home() {
+  var script = document.createElement('script');
     script.type = 'text/javascript';
 
     script.src = 'https://www.gstatic.com/firebasejs/3.4.0/firebase.js';
     document.body.appendChild(script);
-export default function Home() {
   return (
     
     <div className="container">
