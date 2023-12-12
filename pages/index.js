@@ -3,8 +3,7 @@ import Header from '@components/Header'
 import Footer from '@components/Footer'
 
 export default function HelloWorld() {
-  return  <!DOCTYPE html>
-  <html>
+  return <html>
   <body>
   
   <h1>The script element</h1>
